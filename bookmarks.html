@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Marks</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      width: 90%;
+      margin: 25px auto 0;
+      padding: 30px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #111827, #374151);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px #0002;
+    }
+
+    header h1 {
+      font-size: 42px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #d1d5db;
+      margin-top: 8px;
+    }
+
+    /* Navigation */
+    nav {
+      width: 90%;
+      margin: 20px auto;
+      padding: 18px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px #0001;
+    }
+
+    nav ol {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 1px solid #ddd;
+      border-radius: 25px;
+      font-weight: bold;
+      color: #374151;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+    }
+
+    /* Main */
+    main {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section {
+      margin: 20px 0;
+      padding: 35px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px #0001;
+      scroll-margin-top: 20px;
+    }
+
+    section h2 {
+      color: #1d4ed8;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .mytext {
+      max-width: 850px;
+      margin: auto;
+      text-align: justify;
+      text-indent: 30px;
+      color: #4b5563;
+    }
+
+    /* Photo cards */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+      );
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .photo-card {
+      padding: 25px;
+      text-align: center;
+      background: #eff6ff;
+      border: 1px solid #dbeafe;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px #0002;
+    }
+
+    .photo-card h3 {
+      color: #1e40af;
+      margin-bottom: 10px;
+    }
+
+    .photo-card p {
+      color: #4b5563;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 30px;
+      padding: 25px;
+      text-align: center;
+      color: white;
+      background: #111827;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header,
+      nav,
+      main {
+        width: 94%;
+      }
+
+      header h1 {
+        font-size: 30px;
+      }
+
+      section {
+        padding: 25px 18px;
+      }
+
+      nav ol {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      nav a {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- Header -->
+  <header>
+    <h1>Book Marks</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ol>
+      <li><a href="#about">About</a></li>
+      <li><a href="#photo">Photo</a></li>
+      <li><a href="#policy">Policy</a></li>
+      <li><a href="#product">Product</a></li>
+    </ol>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+
+      <p class="mytext">
+In essays, each supporting paragraph adds another related main idea to support the writer’s thesis, or controlling idea. Each related supporting idea is developed with facts, examples, and other details that explain it. By exploring and refining one idea at a time, writers build a strong case for their thesis. Effective paragraphing makes the difference between a satisfying essay that readers can easily process and one that requires readers to mentally organize the piece themselves. Thoughtful organization and development of each body paragraph leads to an effectively focused, developed, and coherent essay
+      </p>
+    </section>
+
+    <!-- Photo Section -->
+    <section id="photo">
+      <h2>Photo</h2>
+
+      <div class="photo-grid">
+
+        <article class="photo-card">
+          <h3>Nature</h3>
+          <p>Beautiful images inspired by nature.</p>
+        </article>
+
+        <article class="photo-card">
+          <h3>Travel</h3>
+          <p>Explore beautiful places and memories.</p>
+        </article>
+
+        <article class="photo-card">
+          <h3>Creative</h3>
+          <p>Discover inspiring designs and ideas.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Policy Section -->
+    <section id="policy">
+      <h2>Policy</h2>
+
+      <p class="mytext">
+        This section contains website rules, privacy
+        information, and terms of use for visitors.
+      </p>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product">
+      <h2>Product</h2>
+
+      <p class="mytext">
+     In narrative and descriptive paragraphs, however, topic sentences may be implied rather than explicitly stated, with all supporting sentences working to create the main idea. If the paragraph contains a concluding sentence, it is the last sentence in the paragraph and reminds the reader of the main point by restating it in different words. The following figure illustrates the most common paragraph structure for informative and persuasive college essays.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Book Marks. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
