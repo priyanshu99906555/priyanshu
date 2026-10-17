@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner in html</title>
+</head>
+<style>
+    @keyframes anil
+    {
+        10%{left:0%;}
+
+        20%{left:-19%;}
+        30%{left:-19%;}
+
+        40%{left:-38%;}
+        50%{left:-38%;}
+
+        60%{left:-57%;}
+        70%{left:-57%;}
+
+    }
+
+    body
+    {
+        margin:0px;
+        padding:0px;
+    }
+    header
+    {
+        width:520;
+        border:1px black solid;
+        height:100px;
+        margin:auto;
+        box-shadow:10px 10px gray;
+
+    }
+    
+    .pic
+    {
+        width:19%;
+        height:100px;
+        margin-left:-4px;
+        position:relative;
+        animation:anil 12s infinite ease-out alternate-reverse;
+
+    }
+
+    #mask
+    {
+        width:70px;
+        height:100px;
+        // background:red;
+        margin:auto;
+        overflow:hidden;
+
+    }
+
+
+    /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+{
+    body{// background:green}
+    #mask
+    {
+        width:99%;
+        height:200px;
+
+    }
+    .pic
+    {
+        height:200px;
+    }
+}
+
+    /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+    body{// background:yellow;}
+    #mask
+    {
+        width:100%;
+        height:450px;
+    
+    }
+    .pic
+    {
+        height:450px;
+
+    }
+
+}
+
+</style>
+
+<div id="mask">
+    <header>
+        <img src="images/j1.png"  class="pic">
+        <img src="images/j2.png"  class="pic">
+        <img src="images/j3.png"  class="pic">
+        <img src="images/j4.png"  class="pic">
+    </header>
+</div>
+<body>
+    
+</body>
+
+</html>

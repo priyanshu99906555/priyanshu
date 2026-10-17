@@ -13,137 +13,20 @@ margin:20px;
 padding:0px;
 background:white;
 }
+
+
+
 header
 {
 width:100%;
-height:400px;
-background:linear-gradient(
-to right, #dcebf2 0%, #edf4f3 55%, #c5dce4 100%
-);
-}
-
-#pic
-{
-width:300px;
-height:300px;
-border-radius:350px;
-border: 5px solid ma;
-background-color:black;
-box-shadow:10px 10px 10px gray;
-margin:165px;
-float:right;
-}
-.text
-{
-color:black;
-font-size:16px;
-font-family:Georgia, "Times New Roman", serif;
-text-align:justify;
-width:40%;
-
-cursor:pointer;
-transition:3s;
-
-margin-left:0px;
-line-height:1.6;
-
-margin-top:50px;
-
-}
-.text:hover
-{
+height:100px;
+//background:green;
+text-align:center;
 color:#317080;
-}
-
-
-/*  RWD */
-
-
-/* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 600px)
- {
-
-   body{ background:white}
- header{  
-     // display:none;
-     font-size:15px;
-    padding:0px;
-   margin-bottom:15px;
-
-	  }
- 		 .pic{
-   			width:100%;
-			margin:0px;
-			margin-bottom:12px;
-	
-			}
 
 }
 
-
-
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-
-@media only screen and (min-width: 600px) 
-{
-
-  body{ background:white}
-header{
-             height:100px;
-             color:cyan;
-	}
-
-}
-
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px)
- {
-    body{ background:white}
-  header{height:200px;color:white;}
-   .pic
-    {
-     width:40%;
-    }
-
-
-}
-
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-
-@media only screen and (min-width: 992px)
- {
-
-  body{ background:white}
-     .pic{width:20%;}
-       header{height:400px}
-           
-   
-
-}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px)
- {
-
-  body{ background:white}
-
-}
-
-
-
-
+/*                  *******************                     */
 
 .hero
  {
@@ -158,34 +41,53 @@ font-size:50px;
 font-family:Georgia, "Times New Roman", serif;
 color:317080;
 }
-nav
+
+
+nav {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+nav ol {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background: #f1f6f8;
+    border-radius: 5px;
+}
+
+nav ol li {
+    display: inline-block;
+    background: #dcebf2;
+    padding: 5px 8px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ol li a {
+    color: #317080;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+nav ol li:hover {
+    background: #317080;
+}
+
+nav ol li:hover a {
+    color: white;
+}
+
+ li:hover
 {
-//background:white;
-text-align:center;
-font-size:20px;
 
 
 }
-nav ol
-{
-list-style:none;
-}
-nav ol li
-{
-display:inline-block;
-background:#dcebf2;
-padding:10px;
-margin-left:-5px;
-cursor:pointer;
-transition:0.5s;
 
-}
-nav ol li:hover
-{
-background:grey;
-color:white;
-transform:scale(1.2);
-}
+
 ol li a:link
 {
 color:#317080;
@@ -202,50 +104,214 @@ text-decoration:underline;
 }
 
 
+
 nav{
 //background:white;
 width:70%;
 margin:auto;
-margin-top:20px;
+margin-top:10px;
 text-align:center;
 
 }
 
+.ux
+{
+font-size:12px;
+}
 
-a(color:white)
+
+
+
+
+/*                 **************************                   */
+
+
+
+
+#pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #317080;
+    box-shadow: 5px 5px 15px gray;
+    margin: 15px;
+}
+
+.text
+{
+color:black;
+font-size:16px;
+font-family:Georgia, "Times New Roman", serif;
+text-align:justify;
+width:40%;
+cursor:pointer;
+transition:3s;
+margin-left:0px;
+line-height:1.6;
+margin-top:50px;
+}
+
+.text:hover
+{
+color:#317080;
+}
+
+
+/*  RWD */
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px)
+ {
+
+   body{ //background:pink;}
+
+ 	
+
+
+#pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #317080;
+    box-shadow: 5px 5px 15px gray;
+    margin: 15px;
+}
+
+
+main
+{
+margin-top:10px;
+//background:yellow;
+width:95%;
+margin:auto;
+text-align:justify;
+box-shadow:10px 10px 10px gray;
+padding:15px;
+text-indent:30px;
+
+}
+
+     
+
+  }
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+@media only screen and (min-width: 600px) 
+{
+
+  body{// background:red;}
+header{
+             height:100px;
+             color:cyan;
+	}
+
+
+ 		 #pic{
+   			width:20%;
+                        }
+
+
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px)
+ {
+   		 body{// background:brown;}
+  		header{height:200px;color:white;}
+  		 .pic
+    			{
+     			width:40%;
+   			 }
+  nav 
+   {
+  width:100%;
+//background:red;
+    }
+     nav ol
+     {
+       //background:green;
+     }
+
+	nav ol li
+		{
+		     display:inline-block;
+                    //background:yellow;
+                     padding:30px;    
+                   
+		}
+     
+#pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #317080;
+    box-shadow: 5px 5px 15px gray;
+    margin: 15px;
+}
+
+
+
+
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+@media only screen and (min-width: 992px)
+ {
+
+  body{ //background:cyan
+         }
+    #pic{width:10%;}
+  main
+	{
+		color:black;
+		text-align:justify;
+		padding:10px;
+		width:50%;
+		margin:auto;
+        }
+   
+       
+           
+   
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+ {
+
+  body{// background:purple;}
+
+}
+
+
+
 
 </style>
 <body>
-<header>
 
-<img src="images/j11.png"id="pic">
-<br/>
-
-
-<h2 style="font-size:24px;
-color:#317080; font-family:"Times New Roman",serif; margin-bottom:-30px;">HELLO, I'M</h2>
-
-
-<h1 style="font-size:75px;margin-bottom:-10px;
-color:#317080;">PRIYANSHU <span style="color:black;">RAWAT</span></h1>
-<br>
-<br>
-<br>
-<h3 style=" font-size:20px;">UI/UX Designer & Creative Designer</h3>
-<main>
-
-
-<p class="description">
-Hello! I am Priyanshu Rawat. I am a passionate UI/UX Designer who loves turning creative ideas into meaningful digital experiences. I focus on designing clean, modern, and user-friendly interfaces that combine creativity with functionality. I enjoy exploring new design trends, understanding user needs, and solving problems through wireframing, prototyping, and visual design. My goal is to create intuitive and engaging digital products that look beautiful and provide a seamless user experience.
-
-</p>
-
-</main>
-
-
-
-
-</header>
 <nav>
 <ol>
 <li><a href="practice.html">Practice Page</a></li>
@@ -254,6 +320,34 @@ Hello! I am Priyanshu Rawat. I am a passionate UI/UX Designer who loves turning 
 <li><a href="#">Social media</a></li>
 </ol>
 </nav>
+
+
+
+<header>
+<img src="images/j11.jpg"  id="pic">
+<br/>
+<p class="heading1" color:#317080; ><b>HELLO, I'M <br/>
+PRIYANSHU RAWAT</b><br/>
+
+<span class="ux">UI/UX Designer & Creative Designer</span>
+</p>
+<main>
+
+
+<p class="description">
+I am a passionate UI/UX Designer who loves turning creative ideas into meaningful digital experiences. I focus on designing clean, modern, and user-friendly interfaces that combine creativity with functionality. I enjoy exploring new design trends, understanding user needs, and solving problems through wireframing, prototyping, and visual design. My goal is to create intuitive and engaging digital products that look beautiful and provide a seamless user experience.
+
+</p>
+
+</main>
+
+</header>
+
+
+
+
+
+
 
 
 
