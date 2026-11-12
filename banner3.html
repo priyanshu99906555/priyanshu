@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        @keyframes ani2
+         {
+            10%{}
+            20%{background-image:url(images/j2.png)}
+            30%{background-image:url(images/j4.png)}
+            40%{background-image:url(images/j5.png)}
+            50%{background-image:url(images/j6.png)}
+            60%{background-image:url(images/j7.png)}
+        }
+        @keyframes runnews
+        {
+            from{margin-left:200px;}
+            to{margin-left:-5500px;}
+        }
+        header
+        {
+            width:80%;
+            //background:green;
+            text-align:center;
+            color:#317080;
+            height:350px;
+            margin-top:-5px;
+            background-image:url(images/j1.png);
+            position:fixed;
+            left:100px;
+            animation:ani2 12s infinite;
+        }
+
+
+        #box
+        {
+            background:rgb(13, 12, 12);
+            width:1700%;
+            height:50px;
+            color:white;
+            font-size:40px;
+            padding:20px;
+            margin-left:90px;
+            font-family:Arial black;
+            position:relative;
+            text-transform:uppercase;
+            opacity:0.60;
+            animation:runnews 70s linear infinite;
+
+        }
+
+        #mask
+        {
+            //background:green;
+            width:81%;
+            margin-left:90px;
+            overflow:hidden;
+
+        }
+
+    </style>
+    <header>
+
+    </header>
+    <div id="mask">
+    <div id="box">
+
+        Today News:
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
+
+    </div>
+
+    </div>
+</head>
+<body>
+    <main>
+
+
+
+
+    </main>
+    
+</body>
+</html>
